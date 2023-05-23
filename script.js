@@ -29,7 +29,7 @@ function generateString(length) {
 // copy the generated password
 
 copy.addEventListener('click', ()=>{
-    if(password.innerHTML !== "Generate Random Password" && password.innerHTML === ""){
+    if(password.innerHTML !== "Generate Random Password" && password.innerHTML !== ""){
         navigator.clipboard.writeText(password.innerHTML)
     }else{
         password.innerHTML = "Generate Random Password"
